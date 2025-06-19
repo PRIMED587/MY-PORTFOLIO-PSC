@@ -7,7 +7,9 @@ const Formacion = () => {
         <h2 className="formacion-title mb-5">Formación Académica</h2>
         <div className="formacion-item">
           <h3>FULL STACK DEVELOPER - 4Geeks Academy</h3>
-          <span className="formacion-fecha">04/2025 – 06/2025</span>
+          <span className="formacion-fecha">
+            04/2025 – 06/2025 | Santiago, Chile{" "}
+          </span>
           <p>
             Aprende a crear sitios web con las mejores prácticas del diseño
             responsive y diversos lenguajes de programación. El programa cubre
