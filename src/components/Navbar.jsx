@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <nav className="custom-navbar navbar navbar-expand-lg">
       <div className="container-fluid">
@@ -18,19 +18,35 @@ export const Navbar = () => {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/formacion">Formación</Link>
+              <Link className="nav-link" to="/formacion">
+                Formación
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/proyectos">Proyectos</Link>
+              <Link className="nav-link" to="/Skills">
+                Skills | Habilidades
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/acerca">Acerca de mí</Link>
+              <Link className="nav-link" to="/proyectos">
+                Proyectos
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/acerca">
+                Acerca de mí
+              </Link>
             </li>
           </ul>
         </div>
@@ -38,3 +54,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;

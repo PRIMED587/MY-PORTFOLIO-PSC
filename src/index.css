@@ -287,3 +287,313 @@
 .whatsapp-icon {
   font-size: 1.3rem;
 }
+
+/* --- Estilos para Formacion.jsx --- */
+.formacion-container {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.formacion-box {
+  background-color: #2a2a2a;
+  border-left: 6px solid #ffa500;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 0 30px rgba(255, 165, 0, 0.15);
+  animation: fadeInUp 1.4s ease both;
+}
+
+.formacion-title {
+  color: #ffa500;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.formacion-item {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+  animation: fadeInUp 1s ease both;
+}
+
+.formacion-item h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.formacion-fecha,
+.formacion-ubicacion {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: #cccccc;
+  margin-right: 10px;
+}
+
+.formacion-item p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #dddddd;
+  line-height: 1.6;
+}
+
+.formacion-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffa500;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.formacion-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .formacion-title {
+    font-size: 2rem;
+  }
+
+  .formacion-box {
+    padding: 25px;
+  }
+
+  .formacion-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .formacion-item p {
+    font-size: 1rem;
+  }
+}
+
+/* --- Animaciones para Formacion.jsx --- */
+
+/* Animación de entrada desde abajo */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efecto brillante al pasar el cursor por los títulos */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #ffa50033;
+  }
+  100% {
+    text-shadow: 0 0 20px #ffa50099, 0 0 30px #ffa50066;
+  }
+}
+
+.formacion-container {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.formacion-box {
+  background-color: #2a2a2a;
+  border-left: 6px solid #ffa500;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 0 30px rgba(255, 165, 0, 0.15);
+  animation: fadeInUp 1.4s ease both;
+}
+
+.formacion-title {
+  color: #ffa500;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.formacion-item {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+  animation: fadeInUp 1.5s ease both;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Diferentes delays para cada ítem (si quieres más, puedes duplicar con delays personalizados) */
+.formacion-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.formacion-item:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.formacion-item h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  transition: all 0.4s ease;
+}
+
+.formacion-item h3:hover {
+  animation: glow 1s ease-in-out infinite alternate;
+  color: #ffa500;
+}
+
+.formacion-fecha,
+.formacion-ubicacion {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: #cccccc;
+  margin-right: 10px;
+}
+
+.formacion-item p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #dddddd;
+  line-height: 1.6;
+  transition: color 0.4s ease;
+}
+
+.formacion-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffa500;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.formacion-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffa500aa;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .formacion-title {
+    font-size: 2rem;
+  }
+
+  .formacion-box {
+    padding: 25px;
+  }
+
+  .formacion-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .formacion-item p {
+    font-size: 1rem;
+  }
+}
+
+/* --- Estilos para Skills.jsx --- */
+.skills-container {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.skills-box {
+  background-color: #2a2a2a;
+  border-left: 6px solid #ffa500;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 0 30px rgba(255, 165, 0, 0.15);
+  animation: fadeInUp 1.4s ease both;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  color: #ffa500;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.skills-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #dddddd;
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.skills-section {
+  margin-bottom: 30px;
+}
+
+.skills-subtitle {
+  font-size: 1.4rem;
+  color: #ffa500;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffa50033;
+  padding-bottom: 5px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+}
+
+.skills-list li {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.skills-list li:hover {
+  color: #ffa500;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .skills-description {
+    font-size: 1rem;
+  }
+}
