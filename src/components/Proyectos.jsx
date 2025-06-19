@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import appEventos from "../assets/img/appeventos.jpg";
 import autenticacion from "../assets/img/autenticacion.jpg";
 import starwars from "../assets/img/starwarsblog.jpg";
@@ -6,7 +6,6 @@ import tictactoe from "../assets/img/tictactoe.jpg";
 import reproductor from "../assets/img/reproductoraudio.jpg";
 import saw from "../assets/img/saw.jpg";
 import semaforo from "../assets/img/semaforodidactico.jpg";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const proyectos = [
   {
@@ -62,33 +61,55 @@ const proyectos = [
 ];
 
 const Proyectos = () => {
-  const trackRef = useRef();
+  const marqueeRef = useRef(null);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
 
-  const scroll = (direction) => {
-    const { current } = trackRef;
-    if (current) {
-      current.scrollBy({
-        left: direction === "left" ? -300 : 300,
-        behavior: "smooth",
-      });
-    }
-  };
+  useEffect(() => {
+    const marquee = marqueeRef.current;
+
+    const onMouseDown = (e) => {
+      if (e.button !== 0) return; // Solo botón izquierdo
+      isDragging.current = true;
+      startX.current = e.pageX;
+      scrollLeft.current = marquee.scrollLeft;
+    };
+
+    const onMouseLeave = () => {
+      isDragging.current = false;
+    };
+
+    const onMouseUp = () => {
+      isDragging.current = false;
+    };
+
+    const onMouseMove = (e) => {
+      if (!isDragging.current) return;
+      e.preventDefault();
+      const x = e.pageX;
+      const walk = (x - startX.current) * 1.5;
+      marquee.scrollLeft = scrollLeft.current - walk;
+    };
+
+    marquee.addEventListener("mousedown", onMouseDown);
+    marquee.addEventListener("mouseleave", onMouseLeave);
+    marquee.addEventListener("mouseup", onMouseUp);
+    marquee.addEventListener("mousemove", onMouseMove);
+
+    return () => {
+      marquee.removeEventListener("mousedown", onMouseDown);
+      marquee.removeEventListener("mouseleave", onMouseLeave);
+      marquee.removeEventListener("mouseup", onMouseUp);
+      marquee.removeEventListener("mousemove", onMouseMove);
+    };
+  }, []);
 
   return (
     <div className="proyectos-container">
       <h2 className="proyectos-title">Mis Proyectos</h2>
-      <div className="proyectos-marquee">
-        <div className="proyectos-controls">
-          <button className="control-btn" onClick={() => scroll("left")}>
-            {" "}
-            <FaChevronLeft />{" "}
-          </button>
-          <button className="control-btn" onClick={() => scroll("right")}>
-            {" "}
-            <FaChevronRight />{" "}
-          </button>
-        </div>
-        <div className="proyectos-track" ref={trackRef}>
+      <div className="proyectos-marquee" ref={marqueeRef}>
+        <div className="proyectos-track">
           {proyectos.map((proyecto, index) => (
             <div className="proyecto-card" key={index}>
               <img
@@ -98,14 +119,16 @@ const Proyectos = () => {
               />
               <h3 className="proyecto-nombre">{proyecto.titulo}</h3>
               <p className="proyecto-descripcion">{proyecto.descripcion}</p>
-              <a
-                href={proyecto.enlace}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="proyecto-btn"
-              >
-                Ver en GitHub
-              </a>
+              <div className="proyecto-btn-container">
+                <a
+                  href={proyecto.enlace}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="proyecto-btn"
+                >
+                  Ver en GitHub
+                </a>
+              </div>
             </div>
           ))}
         </div>
