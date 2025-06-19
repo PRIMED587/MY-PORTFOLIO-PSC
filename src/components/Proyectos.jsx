@@ -6,17 +6,20 @@ import tictactoe from "../assets/img/tictactoe.jpg";
 import reproductor from "../assets/img/reproductoraudio.jpg";
 import saw from "../assets/img/saw.jpg";
 import semaforo from "../assets/img/semaforodidactico.jpg";
+import generador from "../assets/img/Generador.png";
+import aleatorpoker from "../assets/img/aleatorpoker.jpg";
+import jsmethodsort from "../assets/img/sortmethod.jpg";
 
 const proyectos = [
   {
-    titulo: "Gestor y Administrador de Eventos",
+    titulo: "GESTOR Y ADMINISTRADOR DE EVENTOS",
     imagen: appEventos,
     enlace: "https://github.com/PRIMED587/WEBAPP-GESTION-DE-EVENTOS-PSC",
     descripcion:
-      "Aplicación full stack para gestionar eventos, tareas y gastos en equipo. Utiliza React, Python, Flask, SQLAlchemy y Bootstrap.",
+      "Aplicación full stack para gestionar eventos, tareas y gastos en equipo. Utiliza React, Python, Flask, JWT, SQLAlchemy, Bootstrap, rutas dinamicas y consumo de API.",
   },
   {
-    titulo: "Sistema de Autenticación",
+    titulo: "SISTEMA DE AUTENTICACION",
     imagen: autenticacion,
     enlace:
       "https://github.com/PRIMED587/SISTEMA-DE-AUTENTICACION-JWT--JsonWebToken--PSC",
@@ -24,11 +27,11 @@ const proyectos = [
       "Sistema de login y registro seguro con autenticación JWT. Backend en Flask y frontend en React con validaciones.",
   },
   {
-    titulo: "BLOG Star Wars",
+    titulo: "BLOG STAR WARS",
     imagen: starwars,
     enlace: "https://github.com/PRIMED587/BLOG-DE-STARWARS-PSC",
     descripcion:
-      "Sitio tipo blog con personajes y planetas de Star Wars. Manejo de favoritos, rutas dinámicas y consumo de API.",
+      "Sitio tipo blog con personajes, planetas y vehiculos de la saga Star Wars. Manejo de favoritos, rutas dinámicas y consumo de API.",
   },
   {
     titulo: "TIC- TAC-TOE GAME",
@@ -38,25 +41,44 @@ const proyectos = [
       "Clásico juego de tres en raya con React, lógica de turnos, estados y detección de ganador.",
   },
   {
-    titulo: "Reproductor de Audio RETROGAME",
+    titulo: "RETROGAME OST - REPRODUCTOR DE AUDIO",
     imagen: reproductor,
     enlace: "https://github.com/PRIMED587/REPRODUCTOR-DE-AUDIO-PSC",
     descripcion:
-      "Reproductor de audio con estilo retro y botones de control personalizados usando React y efectos CSS.",
+      "Reproductor de audio con estilo retro y botones de control personalizados usando React, efectos CSS, consumo de API entre otros.",
   },
   {
-    titulo: "Contador Macabro SAW",
+    titulo: "CONTADOR MACABRO - SAW",
     imagen: saw,
     enlace: "https://github.com/PRIMED587/PROYECTO-CONTADOR-SIMPLE-SAW-PSC",
     descripcion:
       "Contador con diseño inspirado en la saga SAW, efectos de sonido y estilo temático terror.",
   },
   {
-    titulo: "Semáforo Didáctico",
+    titulo: "SEMAFORO DIDACTICO",
     imagen: semaforo,
     enlace: "https://github.com/PRIMED587/PROYECTO-SEMAFORO-REACT-HOOKS-PSC",
     descripcion:
       "Simulación de un semáforo usando React Hooks y efectos, ideal para prácticas de lógica de estado.",
+  },
+  {
+    titulo: "POKER CARD ALEATORIO",
+    imagen: aleatorpoker,
+    enlace: "https://github.com/PRIMED587/POKER-CARD-ALEATORIO-PSC",
+    descripcion: "PENDIENTE.",
+  },
+  {
+    titulo: "ORDENAMIENTO DE CARTAS - JS METHODS",
+    imagen: jsmethodsort,
+    enlace: "https://github.com/PRIMED587/MOTODOS-DE-ORDENAMIENTO-SORT-JS-PSC",
+    descripcion: "PENDIENTE.",
+  },
+  {
+    titulo: "BASICO GENERADOR DE EXCUSAS",
+    imagen: generador,
+    enlace: "https://github.com/PRIMED587/BASICO-GENERADOR-DE-EXCUSAS-PSC",
+    descripcion:
+      "Disneylandia para procrastinadores! Un generador de excusas super simple de entender, el primer proyecto perfecto para un desarrollador principiante.",
   },
 ];
 
