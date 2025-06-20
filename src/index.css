@@ -506,8 +506,6 @@
 }
 
 /* --- Estilos para Skills.jsx --- */
-/* --- Estilos para Skills.jsx --- */
-/* --- Estilos para Skills.jsx --- */
 
 .skills-container {
   background-color: #1e1e1e;
@@ -540,7 +538,7 @@
   font-size: 1.1rem;
   line-height: 1.6;
   color: #dddddd;
-  text-align: center;
+  text-align: justify;
   margin-bottom: 40px;
   animation: fadeInUp 1s ease forwards;
 }
@@ -576,19 +574,17 @@
   cursor: default;
 }
 
-/* ✅ CORREGIDO: Solo efecto visual en hover */
+
 .skills-list li:hover {
   transform: scale(1.1);
   color: #ffa500;
 }
 
-/* Asegurar que los íconos hereden bien el color */
 .skills-list li i {
   color: inherit;
   transition: color 0.3s ease;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .skills-title {
     font-size: 2rem;

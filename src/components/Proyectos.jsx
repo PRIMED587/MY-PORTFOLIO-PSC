@@ -65,20 +65,22 @@ const proyectos = [
     titulo: "POKER CARD ALEATORIO",
     imagen: aleatorpoker,
     enlace: "https://github.com/PRIMED587/POKER-CARD-ALEATORIO-PSC",
-    descripcion: "PENDIENTE.",
+    descripcion:
+      "Generador de cartas al azar, mediante lógica en JavaScript y manipulación directa del DOM (Document Object Model) para renderizar dinámicamente cada carta en pantalla.",
   },
   {
-    titulo: "ORDENAMIENTO DE CARTAS - JS METHODS",
+    titulo: "ORDENAMIENTO DE CARTAS - JS SORT METHODS",
     imagen: jsmethodsort,
     enlace: "https://github.com/PRIMED587/MOTODOS-DE-ORDENAMIENTO-SORT-JS-PSC",
-    descripcion: "PENDIENTE.",
+    descripcion:
+      "Generador de cartas ordenadas segun en diferentes algoritmos clásicos de ordenamiento (Bubble Sort, Selection Sort, Quick Sort, etc-) orientado a reforzar conceptos de estructuras de datos, lógica algorítmica y eficiencia computacional.",
   },
   {
     titulo: "BASICO GENERADOR DE EXCUSAS",
     imagen: generador,
     enlace: "https://github.com/PRIMED587/BASICO-GENERADOR-DE-EXCUSAS-PSC",
     descripcion:
-      "Disneylandia para procrastinadores! Un generador de excusas super simple de entender, el primer proyecto perfecto para un desarrollador principiante.",
+      "Disneylandia para procrastinadores! Un generador de excusas, el primer proyecto perfecto para un desarrollador principiante.",
   },
 ];
 
