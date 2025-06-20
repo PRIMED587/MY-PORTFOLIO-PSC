@@ -21,12 +21,13 @@ const Skills = () => {
       <div className="skills-box">
         <h2 className="skills-title">Habilidades</h2>
         <p className="skills-description">
-          Como desarrollador Full Stack, he construido una base técnica sólida
-          que me permite abordar proyectos complejos con eficiencia. Mi
-          experiencia cubre tanto el desarrollo del frontend como la lógica de
-          backend, bases de datos, pruebas y despliegue. Me apasiona crear
-          soluciones limpias, escalables y alineadas con las mejores prácticas
-          de la industria.
+          Desarrollador Full Stack siempre en formación con conocimientos en
+          tecnologías de frontend y backend. Capaz de trabajar en el diseño de
+          interfaces web, desarrollo de funcionalidades, conexión con bases de
+          datos y despliegue de aplicaciones. Familiarizado con herramientas
+          modernas de desarrollo, buenas prácticas y control de versiones. Me
+          interesa seguir aprendiendo y mejorar continuamente mis habilidades en
+          la creación de soluciones funcionales y organizadas.
         </p>
 
         {/* Lenguajes */}

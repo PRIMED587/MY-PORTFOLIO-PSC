@@ -109,7 +109,7 @@
 
 .home-text {
   flex: 2 1 400px;
-  text-align: left;
+  text-align: justify;
 }
 
 .home-title {
@@ -346,6 +346,7 @@
   font-size: 1.1rem;
   color: #dddddd;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .formacion-link {
@@ -697,7 +698,7 @@
 /* Tarjeta individual */
 .proyecto-card {
   background-color: #2b2b2b;
-  border-radius: 16px;
+  border-radius: 20px 1px 1px 1px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   width: 280px;
